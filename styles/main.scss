@@ -1,0 +1,126 @@
+@import "global";
+@import "variables";
+
+body {
+  background-color: $Very-light-gray;
+
+  p {
+    letter-spacing: 1px;
+    color: $Transparent-white;
+  }
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: $Very-light-gray;
+  font-weight: 700;
+  font-size: 3.8rem;
+}
+
+button {
+  background-color: $Very-light-gray;
+}
+
+.card {
+  max-width: 900px;
+  height: 470px;
+  // overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  border-radius: 1rem;
+}
+
+.card-1 {
+  background-color: $Bright-orange;
+  padding: 4rem;
+  &__icon {
+  }
+  &__heading {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  &__description {
+  }
+
+  &__btn {
+    color: $Bright-orange;
+  }
+}
+
+.card-2 {
+  background-color: $Dark-cyan;
+  padding: 4rem;
+  &__icon {
+    // margin-bottom: 2rem;
+    // width: 3rem;
+  }
+  &__heading {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  &__description {
+  }
+
+  &__btn {
+    color: $Dark-cyan;
+  }
+}
+
+.card-3 {
+  background-color: $Very-dark-cyan;
+  padding: 4rem;
+  &__icon {
+    // margin-bottom: 2rem;
+    // width: 3rem;
+  }
+  &__heading {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  &__description {
+  }
+
+  &__btn {
+    color: $Very-dark-cyan;
+  }
+}
+
+.btn {
+  text-align: center;
+  border-radius: 12rem;
+  padding: 1.2rem 2.4rem;
+  border: 0;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $Very-light-gray;
+    color: $Very-light-gray;
+  }
+}
+
+.icon {
+  margin-bottom: 3rem;
+}
+
+.description {
+  margin-bottom: 8rem;
+  line-height: 1.7;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 950px) {
+  .card {
+    grid-template-columns: 300px 300px;
+    grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .card {
+    grid-template-columns: 300px;
+  }
+}

@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+body p {
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 3.8rem;
+}
+
+button {
+  background-color: #f2f2f2;
+}
+
+.card {
+  max-width: 900px;
+  height: 470px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px)[3];
+      grid-template-columns: repeat(3, 300px);
+  border-radius: 1rem;
+}
+
+.card-1 {
+  background-color: #e38826;
+  padding: 4rem;
+}
+
+.card-1__heading {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.card-1__btn {
+  color: #e38826;
+}
+
+.card-2 {
+  background-color: #006970;
+  padding: 4rem;
+}
+
+.card-2__heading {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.card-2__btn {
+  color: #006970;
+}
+
+.card-3 {
+  background-color: #004241;
+  padding: 4rem;
+}
+
+.card-3__heading {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.card-3__btn {
+  color: #004241;
+}
+
+.btn {
+  text-align: center;
+  border-radius: 12rem;
+  padding: 1.2rem 2.4rem;
+  border: 0;
+  letter-spacing: 1px;
+  margin-bottom: 3rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+}
+
+.icon {
+  margin-bottom: 3rem;
+}
+
+.description {
+  margin-bottom: 8rem;
+  line-height: 1.7;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 950px) {
+  .card {
+    -ms-grid-columns: 300px 300px;
+        grid-template-columns: 300px 300px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    -ms-grid-columns: 300px;
+        grid-template-columns: 300px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
